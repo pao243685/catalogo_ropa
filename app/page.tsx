@@ -35,7 +35,6 @@ export default function Home() {
             fontStyle: "italic",
           }}
         >
-          {products.length} productos disponibles
         </p>
       </header>
 
