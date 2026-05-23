@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f5efe6;
+  --bg-card: #fdf8f2;
+  --text-primary: #3d2b1f;
+  --text-secondary: #7a5c45;
+  --accent: #b5673a;
+  --accent-light: #d4956a;
+  --border: #e0cbb8;
+  --badge: #8b4a2b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+/* Product detail layout */
+.product-layout {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .product-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+}
